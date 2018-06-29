@@ -67,3 +67,13 @@ we checking esc key pressing and enter key pressing
 
 each item should have order attribute. and when we change the ingredient place by sorting them - we should update all orders inside this sub-list
 
+
+
+---
+
+shopping list views. before i just get a layouts and js code from TODOMVC and apply it. but it has some troubles with converting a logic. and it was not really optimized to mobiles. so when my friend starts joke about it - i spend few weeks and redo it basically from scratch. i find a HTML framework with styles related to mobile form elements and apply groceristar logic into that elements. Not sure if i want to redo it again. maybe it'll be better to implement a gap between Gs and some other TODO list projects. cause I don't want to reinvent the wheel - better to focus on expanding features of it.
+
+
+
+
+
