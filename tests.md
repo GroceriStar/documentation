@@ -6,9 +6,9 @@ description: >-
 
 # Tests
 
-## Getting Super Powers
-
 I think you can start from writing some test coverage for this project. Writing tests is a good habit in software development. It also gives you some understanding about project structure and basic API routes.
+
+## Basic topics for tests
 
 ```
 For a first time just take "a look-a-round" it'll be ok to have 5-10-15-20 tests, related to this functionality:
@@ -18,6 +18,17 @@ For a first time just take "a look-a-round" it'll be ok to have 5-10-15-20 tests
 * Does ingredient A(by name) have a departmentId included 
 * if we pass Ultimate GL Id and department ID, how much ingredients will we have?
 
+
+- [ ] Ingredients
+- [ ] list of departments
+- [ ] test ACL
+- [ ] get ultimate gl
+- [ ] test if server working
+- [ ] create new GL
+
+- [ ] add user
+- [ ] find user
+- [ ] test if AT works
 ```
 
 {% hint style="info" %}
