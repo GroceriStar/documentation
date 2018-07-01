@@ -1,9 +1,3 @@
----
-description: >-
-  This is a page, where we'll list tests, that we should have at Groceristar
-  server
----
-
 # Tests
 
 I think you can start from writing some test coverage for this project. Writing tests is a good habit in software development. It also gives you some understanding about project structure and basic API routes.
