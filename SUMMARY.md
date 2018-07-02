@@ -5,8 +5,8 @@
 * [Shop list information](shop-list-information.md)
 * [Current DB schema](current-db-schema.md)
 * [SubProjects](subprojects.md)
-* [Groceristar Website Methods list](groceristar-website-methods-list.md)
-* [Department Router](department-router.md)
-* [Favorite Router](favorite-router.md)
-* [Grocery Router](grocery-router.md)
+* [Groceristar Website Methods list](groceristar-website-methods-list/README.md)
+  * [Department Router](groceristar-website-methods-list/department-router.md)
+  * [Favorite Router](groceristar-website-methods-list/favorite-router.md)
+  * [Grocery Router](groceristar-website-methods-list/grocery-router.md)
 
