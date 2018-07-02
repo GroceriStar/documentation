@@ -1,8 +1,8 @@
 # Shop list information
 
-## Getting Super Powers
+## Components architecture
 
-Becoming a super hero is a fairly straight forward process:
+This is a list of elements/files that we have at our website version
 
 ```
 Item
