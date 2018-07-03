@@ -2,7 +2,8 @@
 
 * [Tab](README.md)
 * [Tests](tests.md)
-* [Shop list information](shop-list-information.md)
+* [Shop list information](shop-list-information/README.md)
+  * [Components structure](shop-list-information/components-structure.md)
 * [Current DB schema](current-db-schema.md)
 * [SubProjects](subprojects.md)
 * [Groceristar Website Methods list](groceristar-website-methods-list/README.md)
