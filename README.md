@@ -1,8 +1,8 @@
 # Tab
 
-## Getting Super Powers
+## This section is related to Groceristar 2.0.0 version
 
-Becoming a super hero is a fairly straight forward process:
+I'll list and explain methods, that we're using in our project. it should give a good onboarding for a new team members and also speed up development for related to GS projects.
 
 ```
 $ give me super-powers
