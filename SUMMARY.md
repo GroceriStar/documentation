@@ -43,4 +43,5 @@
     * [5](groceristar-website-methods-list/ingredients-router/5.md)
     * [6](groceristar-website-methods-list/ingredients-router/6.md)
     * [7](groceristar-website-methods-list/ingredients-router/7.md)
+* [GS sitemap](gs-sitemap.md)
 
