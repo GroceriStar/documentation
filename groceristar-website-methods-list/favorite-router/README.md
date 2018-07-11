@@ -7,10 +7,14 @@
 | Another version that adds favorites | by passing ingredient\_id |
 | Add favorites/clear??? |  |
 | Method that list all favorites |  |
-| Method that will delete favorites by passing array with ingredient\_ids |  |
+| Method that will delete favorites  | by passing array with ingredient\_ids |
 
 
 
+
+
+| by passing array with ingredient\_ids |
+| --- |
 
 
 
