@@ -4,6 +4,7 @@
 * [Tests](tests.md)
 * [Shop list information](shop-list-information/README.md)
   * [Components structure](shop-list-information/components-structure.md)
+  * [Templates, that we have in our previous esjs, jade version](shop-list-information/templates-that-we-have-in-our-previous-esjs-jade-version.md)
 * [Current DB schema](current-db-schema.md)
 * [SubProjects](subprojects.md)
 * [Groceristar Website Methods list](groceristar-website-methods-list/README.md)
