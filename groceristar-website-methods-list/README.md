@@ -1,23 +1,12 @@
 # Groceristar Website Methods list
 
-## Getting Super Powers
+{% page-ref page="department-router/" %}
 
-Becoming a super hero is a fairly straight forward process:
+{% page-ref page="favorite-router/" %}
 
-```
-$ give me super-powers
-```
+{% page-ref page="grocery-router/" %}
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+{% page-ref page="purchased-router/" %}
 
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
+{% page-ref page="ingredients-router/" %}
 
