@@ -1,19 +1,14 @@
 {
-
   "docs": {
-
-        "Tab":["tab"],
+        "Summary": ["SUMMARY"],
         "Tests": ["tests"],
-        "Shop list information":["shop-list-information/components-structure",
+        "Shop list information": ["shop-list-information/components-structure",
           "shop-list-information/templates"],
-        "Current DB schema":["schema"],
-        "SubProjects":["subprojects"],
+        "Current DB schema": ["schema"],
+        "SubProjects": ["subprojects"],
         "Groceristar Website Methods list": {
-          "Department Router":["doc1"]
+          "Department Router": ["doc1"]
         }
 
-  },
-  "docs-other": {
-    "First Category": ["doc4"]
   }
 }

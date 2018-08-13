@@ -30,7 +30,9 @@ class Button extends React.Component {
   render() {
     return (
       <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={this.props.href} target={this.props.target}>
+        <a className="button"
+           href={this.props.href}
+           target={this.props.target}>
           {this.props.children}
         </a>
       </div>
@@ -59,14 +61,18 @@ const Logo = props => (
 const ProjectTitle = props => (
   <h2 className="projectTitle">
     {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
+    <small>
+      {siteConfig.tagline}
+    </small>
   </h2>
 );
 
 const PromoSection = props => (
   <div className="section promoSection">
     <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
+      <div className="pluginRowBlock">
+        {props.children}
+      </div>
     </div>
   </div>
 );
@@ -81,8 +87,12 @@ class HomeSplash extends React.Component {
           <ProjectTitle />
           <PromoSection>
             <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
+            <Button href={docUrl('doc1.html', language)}>
+              Example Link
+            </Button>
+            <Button href={docUrl('doc2.html', language)}>
+              Example Link 2
+            </Button>
           </PromoSection>
         </div>
       </SplashContainer>
