@@ -1,4 +1,8 @@
-# Tests
+---
+id: tests
+title: Tests
+sidebar_label: Tests
+---
 
 I think you can start from writing some test coverage for this project. Writing tests is a good habit in software development. It also gives you some understanding about project structure and basic API routes.
 
@@ -9,7 +13,7 @@ For a first time just take "a look-a-round" it'll be ok to have 5-10-15-20 tests
 * IS admin was user created?
 * do we have an ultimate list imported?
 * Does this list have ingredients?
-* Does ingredient A(by name) have a departmentId included 
+* Does ingredient A(by name) have a departmentId included
 * if we pass Ultimate GL Id and department ID, how much ingredients will we have?
 
 
@@ -53,6 +57,3 @@ similar tests here
 {% embed data="{\"url\":\"https://stackoverflow.com/questions/49111647/jest-coverage-issue\",\"type\":\"link\",\"title\":\"Jest coverage issue\",\"description\":\"I\'ve started to work with Jest a few days ago and I\'m trying to get 100% of coverage, but I have simple issue, which I cant solve.  Here\'s example of Jest Coverage   File          \|% Stmts \|% Branc...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded\",\"width\":316,\"height\":316,\"aspectRatio\":1}}" %}
 
 {% embed data="{\"url\":\"https://medium.com/@stipsan/best-kept-jest-secret-testing-only-changed-files-with-coverage-reports-3affc8b4d30f\",\"type\":\"link\",\"title\":\"Best kept Jest secret: Testing only changed files with coverage reports\",\"description\":\"UPDATE: this whole post is soon \(https://github.com/facebook/jest/pull/5601\) no longer necessary and the same thing can be done using…\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn-images-1.medium.com/fit/c/304/304/1\*8I-HPL0bfoIzGied-dzOvA.png\",\"width\":152,\"height\":152,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn-images-1.medium.com/max/942/1\*mOZlz7BwrFkGIruaRTg5yA.png\",\"width\":471,\"height\":484,\"aspectRatio\":1.0276008492569002}}" %}
-
-
-

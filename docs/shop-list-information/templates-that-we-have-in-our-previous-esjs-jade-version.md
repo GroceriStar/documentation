@@ -1,3 +1,8 @@
+---
+id: templates
+title: Templates, that we have in our previous esjs, jade version
+sidebar_label: Templates, that we have in our previous esjs, jade version
+---
 # Templates, that we have in our previous esjs, jade version
 
 ### Departments
@@ -37,4 +42,3 @@ it's a basic components, like header, footer, items with default wrappers, check
 * print grocery list
 * purchased forms
 * sign up
-

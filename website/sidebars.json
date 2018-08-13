@@ -1,10 +1,19 @@
 {
+
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+
+        "Tab":["tab"],
+        "Tests": ["tests"],
+        "Shop list information":["shop-list-information/components-structure",
+          "shop-list-information/templates"],
+        "Current DB schema":["schema"],
+        "SubProjects":["subprojects"],
+        "Groceristar Website Methods list": {
+          "Department Router":["doc1"]
+        }
+
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "First Category": ["doc4"]
   }
 }

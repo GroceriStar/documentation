@@ -1,3 +1,7 @@
+---
+id: subprojects
+sidebar_label: SubProjects
+---
 # SubProjects
 
 * [Groceristar Features](https://github.com/GroceriStar/onboarding-features)
@@ -12,4 +16,3 @@
 * [groceristar blog section, gatsby setup](https://github.com/GroceriStar/gs-gatsby-react-blog)
 * [static repository, not remember](https://github.com/GroceriStar/groceris-static)
 * [machine learning for ...](https://github.com/GroceriStar/gs-ml-nlp)
-

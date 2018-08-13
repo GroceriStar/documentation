@@ -1,3 +1,8 @@
+---
+id: components-structure
+title: Components structure
+sidebar_label: Components structure
+---
 # Components structure
 
 ## Components architecture
@@ -25,4 +30,3 @@ Item
 {% hint style="info" %}
  Super-powers are granted randomly so please submit an issue if you're not happy with yours.
 {% endhint %}
-
