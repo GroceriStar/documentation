@@ -1,12 +1,11 @@
 # Groceristar Website Methods list
 
-{% page-ref page="department-router/" %}
+[Department Router](/docs/groceristar-website-methods-list/department-router/README.html)
 
-{% page-ref page="favorite-router/" %}
+[Favorite Router](/docs/groceristar-website-methods-list/favorite-router/README.html)
 
-{% page-ref page="grocery-router/" %}
+[Grocery Router](/docs/groceristar-website-methods-list/grocery-router/README.html)
 
-{% page-ref page="purchased-router/" %}
+[Purchased Router](/docs/groceristar-website-methods-list/purchased-router/README.html)
 
-{% page-ref page="ingredients-router/" %}
-
+[Ingredients Router](/docs/groceristar-website-methods-list/ingredients-router/README.html)

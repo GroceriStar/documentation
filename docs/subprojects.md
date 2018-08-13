@@ -2,7 +2,7 @@
 id: subprojects
 sidebar_label: SubProjects
 ---
-# SubProjects
+
 
 * [Groceristar Features](https://github.com/GroceriStar/onboarding-features)
 * [Frontend is a repo where we trying to store all things related to fronetend work](https://github.com/GroceriStar/frontend)

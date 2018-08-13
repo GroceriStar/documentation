@@ -5,10 +5,7 @@
         "Shop list information": ["shop-list-information/components-structure",
           "shop-list-information/templates"],
         "Current DB schema": ["schema"],
-        "SubProjects": ["subprojects"],
-        "Groceristar Website Methods list": {
-          "Department Router": ["doc1"]
-        }
+        "SubProjects": ["subprojects"]
 
   }
 }

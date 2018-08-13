@@ -1,7 +1,10 @@
-# Favorite Router
+---
+title: Favorite Router
+---
+
 
 | Method | Arguments |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | ---| 
 | Get All ingredients with status `favorite` |  |
 | Delete ingredients from favorites list |  |
 | Another version that adds favorites | by passing ingredient\_id |
@@ -15,15 +18,3 @@
 
 | by passing array with ingredient\_ids |
 | --- |
-
-
-
-
-
-
-
-
-
-
-
-
