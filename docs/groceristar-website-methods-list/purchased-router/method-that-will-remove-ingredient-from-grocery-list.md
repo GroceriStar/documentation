@@ -1,2 +1,5 @@
-# Method that will remove ingredient, from grocery list
+---
+title: Method that will remove ingredient, from grocery list
+---
 
+` `

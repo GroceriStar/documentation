@@ -1,2 +1,5 @@
-# Method that toggle purchased item\(ingredient\)
+---
+title: Method that toggle purchased item\(ingredient\)
+---
 
+` `

@@ -3,7 +3,6 @@ id: templates
 title: Templates, that we have in our previous esjs, jade version
 sidebar_label: Templates, that we have in our previous esjs, jade version
 ---
-# Templates, that we have in our previous esjs, jade version
 
 ### Departments
 
