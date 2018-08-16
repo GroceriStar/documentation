@@ -1,0 +1,11 @@
+{
+  "docs": {
+        "Summary": ["SUMMARY"],
+        "Tests": ["tests"],
+        "Shop list information": ["shop-list-information/components-structure",
+          "shop-list-information/templates"],
+        "Current DB schema": ["schema"],
+        "SubProjects": ["subprojects"]
+
+  }
+}
