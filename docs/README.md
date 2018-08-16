@@ -1,9 +1,8 @@
 ---
 id: tab
-title: tab
+title: Tab
 sidebar_label: Tab
 ---
-# Tab
 
 ## This section is related to Groceristar 2.0.0 version
 
@@ -19,6 +18,5 @@ Purchased ingredients/items router
 Ingredients router
 ```
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+
+>Super-powers are granted randomly so please submit an issue if you're not happy with yours.

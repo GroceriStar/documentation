@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site' /* title for your website */,
+  title: 'documentation' /* title for your website */,
   tagline: 'A website for testing',
   url: 'https://your-docusaurus-test-site.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
@@ -40,16 +40,16 @@ const siteConfig = {
   headerLinks: [
     { doc: 'summary', label: 'Summary' },
     { page: 'help',   label: 'Help' },
-    { blog: true,     label: 'Blog' },
+
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/LOGO1.png',
+  footerIcon: 'img/LOGO1.png',
+  favicon: 'img/LOGO1.png',
 
   /* colors for website */
   colors: {
