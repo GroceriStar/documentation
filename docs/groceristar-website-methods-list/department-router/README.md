@@ -1,6 +1,7 @@
 ---
 id: department-router
 title: Department Router
+sidebar_label: Department Router
 ---
 
 

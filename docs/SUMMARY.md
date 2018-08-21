@@ -6,7 +6,6 @@ sidebar_label: Table of Contents
 
 # Table of contents
 
-* [Tab](README.md)
 * [Tests](tests.md)
 * [Shop list information](shop-list-information/README.md)
   * [Components structure](shop-list-information/components-structure.md)

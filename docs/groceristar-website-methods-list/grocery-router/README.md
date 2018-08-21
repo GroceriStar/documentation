@@ -1,9 +1,11 @@
 ---
+id: grocery-router
 title: Grocery Router
+sidebar_label: Grocery Router
 ---
 
 | Method | Arguments |
-| ---    | ----------| 
+| ---    | ----------|
 | Method that will Display Grocery List Data | by passing Grocery\_id |
 | Method, that will display hidden departments\( status `hidden`\)  | by passing grocery\_id |
 | Add `if(ultimate)`then display only grocery from basic templates |  |

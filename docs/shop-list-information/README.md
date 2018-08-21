@@ -1,5 +1,7 @@
 ---
+id: shop-list-information
 title: Shop list information
+sidebar_label: Shop list information
 ---
 
 
