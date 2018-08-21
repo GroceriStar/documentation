@@ -183,7 +183,6 @@ const FeatureCallout = props => (
     <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/10.html">page with Method, that will display all grocery lists, related to user</a></li>
     <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/11.html">page with Method, that will display all grocery lists, related to user</a></li>
     <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/12.html">Display shopping list (ingredients list group by department)</a></li>
-    <li><a href="groceristar-website-methods-list/grocery-router/13.md">13</a></li>
     </ul></li>
     <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/purchased-router.html">Purchased Router</a>
     <ul>
