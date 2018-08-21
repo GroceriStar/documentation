@@ -1,0 +1,23 @@
+{
+  "docs": {
+        "Tests": ["tests"],
+        "Shop list information": [
+          "shop-list-information/shop-list-information",
+          "shop-list-information/components-structure",
+          "shop-list-information/templates"],
+        "Current DB schema": ["schema"],
+        "SubProjects": ["subprojects"],
+        "Groceristar Website Methods list":[
+          "groceristar-website-methods-list/groceristar-website-methods-list",
+          "groceristar-website-methods-list/department-router/department-router",
+          "groceristar-website-methods-list/favorite-router/favorite-router",
+            "groceristar-website-methods-list/grocery-router/grocery-router",
+            "groceristar-website-methods-list/purchased-router/purchased-router",
+            "groceristar-website-methods-list/ingredients-router/ingredients-router"
+        ],
+        "  ": [
+          "gs-sitemap",
+          "gs-shoplist-screens"
+        ]
+  }
+}
