@@ -21,17 +21,17 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'documentation' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com' /* your website url */,
-  baseUrl: '/' /* base url for your project */,
+  title: 'GroceriStar documentation' /* title for your website */,
+  tagline: 'Documentation',
+  url: 'https://groceristar.github.io/' /* your website url */,
+  baseUrl: '/documentation/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'documentation',
+  organizationName: 'groceristar',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -39,6 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'summary', label: 'Summary' },
+    {href : 'https://github.com/GroceriStar/documentation', label: 'GitHub'},
     { page: 'help',   label: 'Help' },
 
   ],
@@ -73,7 +74,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+    ' GroceriStar company',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
@@ -92,7 +93,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+    repoUrl: 'https://github.com/GroceriStar',
 };
 
 module.exports = siteConfig;

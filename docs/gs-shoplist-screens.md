@@ -1,5 +1,7 @@
 ---
+id: gs-shoplist-screens
 title: GS Shoplist screens
+sidebar_label: GS Shoplist screens
 ---
 ### Opened Shoplist for Fresh vegetables department
 

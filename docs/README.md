@@ -17,6 +17,3 @@ Grocery router
 Purchased ingredients/items router
 Ingredients router
 ```
-
-
->Super-powers are granted randomly so please submit an issue if you're not happy with yours.

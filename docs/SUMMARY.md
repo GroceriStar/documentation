@@ -6,7 +6,6 @@ sidebar_label: Table of Contents
 
 # Table of contents
 
-* [Tab](README.md)
 * [Tests](tests.md)
 * [Shop list information](shop-list-information/README.md)
   * [Components structure](shop-list-information/components-structure.md)
@@ -36,7 +35,6 @@ sidebar_label: Table of Contents
     * [page with Method, that will display all grocery lists, related to user](groceristar-website-methods-list/grocery-router/10.md)
     * [page with Method, that will display all grocery lists, related to user](groceristar-website-methods-list/grocery-router/11.md)
     * [Display shopping list \(ingredients list group by department\)](groceristar-website-methods-list/grocery-router/12.md)
-    * [13](groceristar-website-methods-list/grocery-router/13.md)
   * [Purchased Router](groceristar-website-methods-list/purchased-router/README.md)
     * [Method that toggle purchased item\(ingredient\)](groceristar-website-methods-list/purchased-router/method-that-toggle-purchased-item-ingredient.md)
     * [Method that will remove all items\(ingredients\) from purchased list](groceristar-website-methods-list/purchased-router/method-that-will-remove-all-items-ingredients-from-purchased-list.md)
