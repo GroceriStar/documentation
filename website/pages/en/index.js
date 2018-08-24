@@ -114,9 +114,10 @@ const Features = props => (
     ]}
   </Block>
 );
+
 const MainPage = props => (
   <div
-    className="productShowcaseSection paddingBottom"
+    className="showcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
 
         <div className = "tableofcontents">
@@ -138,73 +139,165 @@ const MainPage = props => (
 
   </div>
 );
+
 const FeatureCallout = props => (
   <div
-    className="productShowcaseSection paddingBottom"
+    className="showcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
-    <h2>Table of contents</h2>
-        <div className = "tableofcontents">
+    <h2>
+      Table of contents
+    </h2>
+
+        <div className = "tableofcontents" style={{margin: '0px 150px'}}>
 
           <ul>
-    <li><a href="/documentation/docs/tests.html">Tests</a></li>
-    <li><a href="/documentation/docs/shop-list-information/shop-list-information.html">Shop list information</a>
-    <ul>
-    <li><a href="/documentation/docs/shop-list-information/components-structure.html">Components structure</a></li>
-    <li><a href="/documentation/docs/shop-list-information/templates.html">Templates, that we have in our previous esjs, jade version</a></li>
-    </ul></li>
-    <li><a href="/documentation/docs/schema.html">Current DB schema</a></li>
-    <li><a href="/documentation/docs/subprojects.html">SubProjects</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/groceristar-website-methods-list.html">Groceristar Website Methods list</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/department-router/department-router.html">Department Router</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/department-router/dr1.html">Get data, related to single department</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/department-router/dr2.html">Get list of departments, related to one grocery list</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/department-router/dr3.html">Hide department, , Show All departments method, Toggle department status</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/department-router/dr4.html">remove department from grocery list</a></li>
-    </ul></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/favorite-router/favorite-router.html">Favorite Router</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/favorite-router/1.html">Get All ingredients with status favorite</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/favorite-router/2.html">Delete ingredients from favorites list</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/favorite-router/3.html">Another version that adds favorites</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/favorite-router/4.html">Method that list all favorites</a></li>
-    </ul></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/grocery-router.html">Grocery Router</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/1.html">Display Grocery List Data</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/3.html">display hidden departments( status hidden) 3</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/4.html">Add if(ultimate)then display only grocery from basic templates</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/5.html">Attach grocery list to user5</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/6.html">Clone list with all data to a new grocery list record</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/7.html">Display page with clone Form</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/8.html">Remove Grocery list from user account</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/9.html">Create New, Empty Grocery List inside the user account</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/10.html">page with Method, that will display all grocery lists, related to user</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/11.html">page with Method, that will display all grocery lists, related to user</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/grocery-router/12.html">Display shopping list (ingredients list group by department)</a></li>
-    </ul></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/purchased-router.html">Purchased Router</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-toggle-purchased-item-ingredient.html">Method that toggle purchased item(ingredient)</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-will-remove-all-items-ingredients-from-purchased-list.html">Method that will remove all items(ingredients) from purchased list</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-will-remove-ingredient-from-grocery-list.html">Method that will remove ingredient, from grocery list</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/purchased-router/removed-that-item-from-purchased-list-and-removed-ingredient-from-grocery-list.html">removed that item from purchased list and removed ingredient from Grocery List</a></li>
-    </ul></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/ingredients-router.html">Ingredients Router</a>
-    <ul>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/untitled.html">Create or find at db new ingredient new ingredient and attach it to grocery list</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/2.html">Method moves ingredient from one department to another(can work only with custom ingredients)</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/3.html">Method that changes the ingredients -&gt; name works only with custom ingredients</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/4.html">Method that delete array of ingredients</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/5.html">Create a new custom ingredinet+ save it to db</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/6.html">Method that will called only if we want to edit not a custom element</a></li>
-    <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/7.html">Method that get list of ingredients from department</a></li>
-    </ul></li>
-    </ul></li>
-    <li><a href="/documentation/docs/gs-sitemap.html">GS sitemap</a></li>
-    <li><a href="/documentation/docs/gs-shoplist-screens.html">GS Shoplist screens</a></li>
-    </ul>
+            <li>
+              <a href="/documentation/docs/tests.html">Tests</a>
+            </li>
+            <li>
+              <a href="/documentation/docs/shop-list-information/shop-list-information.html">Shop list information</a>
+              <ul>
+                <li>
+                  <a href="/documentation/docs/shop-list-information/components-structure.html">Components structure</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/shop-list-information/templates.html">Templates, that we have in our previous esjs, jade version</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/documentation/docs/schema.html">Current DB schema</a>
+            </li>
+            <li>
+              <a href="/documentation/docs/subprojects.html">SubProjects</a>
+            </li>
+            <li>
+              <a href="/documentation/docs/groceristar-website-methods-list/groceristar-website-methods-list.html">Groceristar Website Methods list</a>
+            <ul>
+              <li>
+                <a href="/documentation/docs/groceristar-website-methods-list/department-router/department-router.html">Department Router</a>
+                <ul>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/department-router/dr1.html">Get data, related to single department</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/department-router/dr2.html">Get list of departments, related to one grocery list</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/department-router/dr3.html">Hide department, , Show All departments method, Toggle department status</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/department-router/dr4.html">remove department from grocery list</a>
+                  </li>
+                </ul>
+              </li>
+            <li>
+              <a href="/documentation/docs/groceristar-website-methods-list/favorite-router/favorite-router.html">Favorite Router</a>
+              <ul>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/favorite-router/1.html">Get All ingredients with status favorite</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/favorite-router/2.html">Delete ingredients from favorites list</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/favorite-router/3.html">Another version that adds favorites</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/favorite-router/4.html">Method that list all favorites</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/grocery-router.html">Grocery Router</a>
+                <ul>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/1.html">Display Grocery List Data</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/3.html">display hidden departments( status hidden) 3</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/4.html">Add if(ultimate)then display only grocery from basic templates</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/5.html">Attach grocery list to user5</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/6.html">Clone list with all data to a new grocery list record</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/7.html">Display page with clone Form</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/8.html">Remove Grocery list from user account</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/9.html">Create New, Empty Grocery List inside the user account</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/10.html">page with Method, that will display all grocery lists, related to user</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/11.html">page with Method, that will display all grocery lists, related to user</a>
+                  </li>
+                  <li>
+                    <a href="/documentation/docs/groceristar-website-methods-list/grocery-router/12.html">Display shopping list (ingredients list group by department)</a>
+                  </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/documentation/docs/groceristar-website-methods-list/purchased-router/purchased-router.html">Purchased Router</a>
+              <ul>
+              <li>
+                <a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-toggle-purchased-item-ingredient.html">Method that toggle purchased item(ingredient)</a>
+              </li>
+              <li>
+                <a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-will-remove-all-items-ingredients-from-purchased-list.html">Method that will remove all items(ingredients) from purchased list</a>
+              </li>
+              <li>
+                <a href="/documentation/docs/groceristar-website-methods-list/purchased-router/method-that-will-remove-ingredient-from-grocery-list.html">Method that will remove ingredient, from grocery list</a>
+              </li>
+              <li>
+                <a href="/documentation/docs/groceristar-website-methods-list/purchased-router/removed-that-item-from-purchased-list-and-removed-ingredient-from-grocery-list.html">removed that item from purchased list and removed ingredient from Grocery List</a>
+              </li>
+              </ul>
+            </li>
+            <li><a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/ingredients-router.html">Ingredients Router</a>
+              <ul>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/untitled.html">Create or find at db new ingredient new ingredient and attach it to grocery list</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/2.html">Method moves ingredient from one department to another(can work only with custom ingredients)</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/3.html">Method that changes the ingredients -&gt; name works only with custom ingredients</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/4.html">Method that delete array of ingredients</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/5.html">Create a new custom ingredinet+ save it to db</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/6.html">Method that will called only if we want to edit not a custom element</a>
+                </li>
+                <li>
+                  <a href="/documentation/docs/groceristar-website-methods-list/ingredients-router/7.html">Method that get list of ingredients from department</a>
+                </li>
+              </ul>
+            </li>
+            </ul>
+            </li>
+              <li>
+                <a href="/documentation/docs/gs-sitemap.html">GS sitemap</a>
+              </li>
+              <li>
+                <a href="/documentation/docs/gs-shoplist-screens.html">GS Shoplist screens</a>
+              </li>
+            </ul>
 
       </div>
 
@@ -222,25 +315,39 @@ const FeatureCallout2 = props => (
 
             </img>
           </div>
-          <div className="blockContent"><h2><div><span><p>Description</p>
-    </span></div></h2><div><span><p>
-        Build with: Angular, Ionic Framework v.1
-      <ul>
-        <h3>Basic functionality:</h3>
-        <li>Screen with recipes list</li>
-        <li>Recipe details</li>
-        <li>Basic grocery list</li>
-        <li>Login screen.</li>
-    </ul>
+          <div className="blockContent">
+            <h2>
+              <div>
+                <span>
+                  <p>
+                    Description
+                  </p>
+                </span>
+              </div>
+            </h2>
+            <div>
+              <span>
+                <p>
+                  Build with: Angular, Ionic Framework v.1
+                </p>
+              </span>
+              <ul>
+                <h3>Basic functionality:</h3>
+                <li>Screen with recipes list</li>
+                <li>Recipe details</li>
+                <li>Basic grocery list</li>
+                <li>Login screen.</li>
+            </ul>
 
 
 
-      </p>
-    </span></div></div></div>
+
+    </div></div></div>
       </div>
     </div>
   </div>
 );
+
 const LearnHow = props => (
   <Block background="light">
     {[
@@ -321,9 +428,10 @@ class Index extends React.Component {
           {/* <Features /> */}
            {/* <TryOut /> */}
 
-          <MainPage />
-          <FeatureCallout />
-
+          <Container padding={['bottom']}>
+            <MainPage />
+            <FeatureCallout />
+          </Container>
            {/* <LearnHow /> */}
 
           {/* <Description />  */}
