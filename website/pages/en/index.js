@@ -121,21 +121,21 @@ const MainPage = props => (
     style={{textAlign: 'center'}}>
 
         <div className = "tableofcontents">
-
-        <strong>  This section is related to Groceristar 2.0.0 version</strong>
-
-          <br/>I'll list and explain methods, that we're using in our project. It should give a good onboarding for a new team members and also speed up development for related to GS projects.
-          <pre>
-            <code className="hljs">
-              <span className="hljs-symbol">Department</span> router
-    <br/><span className="hljs-symbol">Favorite</span> ingredients router
-    <br/><span className="hljs-symbol">Grocery</span> router
-    <br/><span className="hljs-symbol">Purchased</span> ingredients/<span className="hljs-keyword">items </span>router
-    <br/><span className="hljs-symbol">Ingredients</span> router
-    <br/></code>
-          </pre>
-      </div>
-
+          <strong>This section is related to Groceristar 2.0.0 version</strong>
+          <p>
+            I'll list and explain methods, that we're using in our project. It should give a good onboarding for a new team members and also speed up development for related to GS projects.
+          </p>
+            <pre>
+              <code className="hljs">
+                <p className="hljs-symbol">Department router</p>
+                <p className="hljs-symbol">Favorite ingredients router</p>
+                <p className="hljs-symbol">Grocery router</p>
+                <p className="hljs-symbol">Purchased ingredients</p>
+                <p className="hljs-keyword">items router</p>
+                <p className="hljs-symbol">Ingredients router</p>
+              </code>
+            </pre>
+        </div>
 
   </div>
 );
