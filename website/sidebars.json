@@ -16,8 +16,12 @@
             "groceristar-website-methods-list/ingredients-router/ingredients-router"
         ],
         "  ": [
+          "website-dashboard",
           "gs-sitemap",
-          "gs-shoplist-screens"
+          "gs-shoplist-screens",
+          "credits",
+          "STYLE-GUIDE"
+
         ]
   }
 }
