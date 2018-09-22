@@ -1,3 +1,8 @@
+---
+id: credits
+title: Where we get template data
+---
+
 ### Where we get template data.
 
 it's not the latest version.
