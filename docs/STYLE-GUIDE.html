@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Style Guide · GroceriStar documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="### Indentation"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Style Guide · GroceriStar documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://groceristar.github.io//documentation/index.html"/><meta property="og:description" content="### Indentation"/><meta property="og:image" content="https://groceristar.github.io//documentation/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://groceristar.github.io//documentation/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation/img/LOGO1.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/LOGO1.png" alt="GroceriStar documentation"/><h2 class="headerTitleWithLogo">GroceriStar documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/documentation/docs/summary.html" target="_self">Summary</a></li><li class=""><a href="https://github.com/GroceriStar/documentation" target="_self">GitHub</a></li><li class=""><a href="/documentation/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>  </span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Tests</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tests.html">Tests</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Shop list information</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/shop-list-information/shop-list-information.html">Shop list information</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/shop-list-information/components-structure.html">Components structure</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/shop-list-information/templates.html">Templates, that we have in our previous esjs, jade version</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Current DB schema</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/schema.html">Current DB schema</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">SubProjects</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/subprojects.html">SubProjects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Groceristar Website Methods list</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/groceristar-website-methods-list.html">Groceristar Website Methods list</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/department-router/department-router.html">Department Router</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/favorite-router/favorite-router.html">Favorite Router</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/grocery-router/grocery-router.html">Grocery Router</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/purchased-router/purchased-router.html">Purchased Router</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/groceristar-website-methods-list/ingredients-router/ingredients-router.html">Ingredients Router</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">  </h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/website-dashboard.html">Logged in User workspace</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/gs-sitemap.html">GS sitemap</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/gs-shoplist-screens.html">GS Shoplist screens</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/credits.html">Where we get template data</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/STYLE-GUIDE.html">Style Guide</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Style Guide</h1></header><article><div><span><h3><a class="anchor" aria-hidden="true" id="indentation"></a><a href="#indentation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Indentation</h3>
+<p>When writing any block of code that is logically subordinate to the line immediately before and after it, that block should be indented two spaces more than the surrounding lines</p>
+<ul>
+<li>Do not put any tab characters anywhere in your code. You would do best to stop pressing the tab key entirely.</li>
+<li>Increase the indent level for all blocks by two extra spaces
+<ul>
+<li><p>When a line opens a block, the next line starts 2 spaces further in than the line that opened</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">if</span>(condition){
+  action();
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">if</span>(condition){
+action();
+}
+</code></pre></li>
+<li><p>When a line closes a block, that line starts at the same level as the line that opened the block</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">if</span>(condition){
+  action();
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">if</span>(condition){
+  action();
+  }
+</code></pre></li>
+<li><p>No two lines should ever have more or less than 2 spaces difference in their indentation. Any number of mistakes in the above rules could lead to this, but one example would be:</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// bad:</span>
+transmogrify({
+  <span class="hljs-attr">a</span>: {
+    <span class="hljs-attr">b</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    }
+}});
+</code></pre></li>
+<li><p>use sublime's arrow collapsing as a guide. do the collapsing lines seem like they should be 'contained' by the line with an arrow on it?</p></li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="variable-names"></a><a href="#variable-names" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Variable names</h3>
+<ul>
+<li><p>A single descriptive word is best.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> animals = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> targetInputs = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+</code></pre></li>
+<li><p>Collections such as arrays and maps should have plural noun variable names.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> animals = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> animalList = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> animal = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+</code></pre></li>
+<li><p>Name your variables after their purpose, not their structure</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> animals = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> array = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'fish'</span>];
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="language-constructs"></a><a href="#language-constructs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Language constructs</h3>
+<ul>
+<li><p>Do not use <code>for...in</code> statements with the intent of iterating over a list of numeric keys. Use a for-with-semicolons statement in stead.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> list = [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++){
+  alert(list[i]);
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> list = [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> list){
+  alert(list[i]);
+}
+</code></pre></li>
+<li><p>Never omit braces for statement blocks (although they are technically optional).</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">for</span>(key <span class="hljs-keyword">in</span> object){
+  alert(key);
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">for</span>(key <span class="hljs-keyword">in</span> object)
+  alert(key);
+</code></pre></li>
+<li><p>Always use <code>===</code> and <code>!==</code>, since <code>==</code> and <code>!=</code> will automatically convert types in ways you're unlikely to expect.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+
+<span class="hljs-comment">// this comparison evaluates to false, because the number zero is not the same as the empty string.</span>
+<span class="hljs-keyword">if</span>(<span class="hljs-number">0</span> === <span class="hljs-string">''</span>){
+  alert(<span class="hljs-string">'looks like they\'re equal'</span>);
+}
+
+<span class="hljs-comment">// bad:</span>
+
+<span class="hljs-comment">// This comparison evaluates to true, because after type coercion, zero and the empty string are equal.</span>
+<span class="hljs-keyword">if</span>(<span class="hljs-number">0</span> == <span class="hljs-string">''</span>){
+  alert(<span class="hljs-string">'looks like they\'re equal'</span>);
+}
+</code></pre></li>
+<li><p>Don't use function statements for the entire first half of the course. They introduce a slew of subtle new rules to how the language behaves, and without a clear benefit. Once you and all your peers are expert level in the second half, you can start to use the more (needlessly) complicated option if you like.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> go = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{...};
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stop</span>(<span class="hljs-params"></span>)</span>{...};
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="semicolons"></a><a href="#semicolons" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Semicolons</h3>
+<ul>
+<li><p>Don't forget semicolons at the end of lines</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+alert(<span class="hljs-string">'hi'</span>);
+
+<span class="hljs-comment">// bad:</span>
+alert(<span class="hljs-string">'hi'</span>)
+</code></pre></li>
+<li><p>Semicolons are not required at the end of statements that include a block--i.e. <code>if</code>, <code>for</code>, <code>while</code>, etc.</p></li>
+</ul>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">if</span>(condition){
+  response();
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">if</span>(condition){
+  response();
+};
+</code></pre>
+<ul>
+<li><p>Misleadingly, a function may be used at the end of a normal assignment statement, and would require a semicolon (even though it looks rather like the end of some statement block).</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> greet = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  alert(<span class="hljs-string">'hi'</span>);
+};
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> greet = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  alert(<span class="hljs-string">'hi'</span>);
+}
+</code></pre></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="supplemental-reading"></a><a href="#supplemental-reading" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supplemental reading</h1>
+<h3><a class="anchor" aria-hidden="true" id="code-density"></a><a href="#code-density" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code density</h3>
+<ul>
+<li>Conserve line quantity by minimizing the number lines you write in. The more concisely your code is written, the more context can be seen in one screen.</li>
+<li>Conserve line length by minimizing the amount of complexity you put on each line. Long lines are difficult to read. Rather than a character count limit, I recommend limiting the amount of complexity you put on a single line. Try to make it easily read in one glance. This goal is in conflict with the line quantity goal, so you must do your best to balance them.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="comments"></a><a href="#comments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Comments</h3>
+<ul>
+<li>Provide comments any time you are confident it will make reading your code easier.</li>
+<li>Be aware that comments come at some cost. They make a file longer and can drift out of sync with the code they annotate.</li>
+<li>Comment on what code is attempting to do, not how it will achieve it.</li>
+<li>A good comment is often less effective than a good variable name.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="padding-additional-whitespace"></a><a href="#padding-additional-whitespace" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Padding &amp; additional whitespace</h3>
+<ul>
+<li><p>Generally, we don't care where you put extra spaces, provided they are not distracting.</p></li>
+<li><p>You may use it as padding for visual clarity. If you do though, make sure it's balanced on both sides.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// optional:</span>
+alert( <span class="hljs-string">"I chose to put visual padding around this string"</span> );
+
+<span class="hljs-comment">// bad:</span>
+alert( <span class="hljs-string">"I only put visual padding on one side of this string"</span>);
+</code></pre></li>
+<li><p>You may use it to align two similar lines, but it is not recommended. This pattern usually leads to unnecessary edits of many lines in your code every time you change a variable name.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// discouraged:</span>
+<span class="hljs-keyword">var</span> firstItem  = getFirst ();
+<span class="hljs-keyword">var</span> secondItem = getSecond();
+</code></pre></li>
+<li><p>Put <code>else</code> and <code>else if</code> statements on the same line as the ending curly brace for the preceding <code>if</code> block</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">if</span>(condition){
+  response();
+}<span class="hljs-keyword">else</span>{
+  otherResponse();
+}
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">if</span>(condition){
+  response();
+}
+<span class="hljs-keyword">else</span>{
+  otherResponse();
+}
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="working-with-files"></a><a href="#working-with-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Working with files</h3>
+<ul>
+<li><p>Do not end a file with any character other than a newline.</p></li>
+<li><p>Don't use the -a or -m flags for <code>git commit</code> for the first half of the class, since they conceal what is actually happening (and do slightly different things than most people expect).</p>
+<pre><code class="hljs css languages- shell"><span class="hljs-meta">#</span><span class="bash"> good:</span>
+<span class="hljs-meta">&gt;</span><span class="bash"> git add .</span>
+<span class="hljs-meta">&gt;</span><span class="bash"> git commit</span>
+[save edits to the commit message file using the text editor that opens]
+<span class="hljs-meta">
+#</span><span class="bash"> bad:</span>
+<span class="hljs-meta">&gt;</span><span class="bash"> git commit -a</span>
+[save edits to the commit message file using the text editor that opens]
+<span class="hljs-meta">
+#</span><span class="bash"> bad:</span>
+<span class="hljs-meta">&gt;</span><span class="bash"> git add .</span>
+<span class="hljs-meta">&gt;</span><span class="bash"> git commit -m <span class="hljs-string">"updated algorithm"</span></span>
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="opening-or-closing-too-many-blocks-at-once"></a><a href="#opening-or-closing-too-many-blocks-at-once" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Opening or closing too many blocks at once</h3>
+<ul>
+<li><p>The more blocks you open on a single line, the more your reader needs to remember about the context of what they are reading. Try to resolve your blocks early, and refactor. A good rule is to avoid closing more than two blocks on a single line--three in a pinch.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// avoid:</span>
+_.ajax(url, {<span class="hljs-attr">success</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-comment">// ...</span>
+}});
+
+<span class="hljs-comment">// prefer:</span>
+_.ajax(url, {
+  <span class="hljs-attr">success</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="variable-declaration"></a><a href="#variable-declaration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Variable declaration</h3>
+<ul>
+<li><p>Use a new var statement for each line you declare a variable on.</p></li>
+<li><p>Do not break variable declarations onto mutiple lines.</p></li>
+<li><p>Use a new line for each variable declaration.</p></li>
+<li><p>See <a href="http://benalman.com/news/2012/05/multiple-var-statements-javascript/">http://benalman.com/news/2012/05/multiple-var-statements-javascript/</a> for more details</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> ape;
+<span class="hljs-keyword">var</span> bat;
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> cat,
+    dog
+
+<span class="hljs-comment">// use sparingly:</span>
+<span class="hljs-keyword">var</span> eel, fly;
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="capital-letters-in-variable-names"></a><a href="#capital-letters-in-variable-names" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Capital letters in variable names</h3>
+<ul>
+<li>Some people choose to use capitalization of the first letter in their variable names to indicate that they contain a [class](<a href="http://en.wikipedia.org/wiki/Class_(computer_science)">http://en.wikipedia.org/wiki/Class_(computer_science)</a>). This capitalized variable might contain a function, a prototype, or some other construct that acts as a representative for the whole class.</li>
+<li>Optionally, some people use a capital letter only on functions that are written to be run with the keyword <code>new</code>.</li>
+<li>Do not use all-caps for any variables. Some people use this pattern to indicate an intended &quot;constant&quot; variable, but the language does not offer true constants, only mutable variables.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="minutia"></a><a href="#minutia" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Minutia</h3>
+<ul>
+<li><p>Don't rely on JavaScripts implicit global variables. If you are intending to write to the global scope, export things to <code>window.*</code> explicitly instead.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> overwriteNumber = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">window</span>.exported = <span class="hljs-built_in">Math</span>.random();
+};
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> overwriteNumber = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  exported = <span class="hljs-built_in">Math</span>.random();
+};
+</code></pre></li>
+<li><p>For lists, put commas at the end of each newline, not at the beginning of each item in a list</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> animals = [
+  <span class="hljs-string">'ape'</span>,
+  <span class="hljs-string">'bat'</span>,
+  <span class="hljs-string">'cat'</span>
+];
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> animals = [
+    <span class="hljs-string">'ape'</span>
+  , <span class="hljs-string">'bat'</span>
+  , <span class="hljs-string">'cat'</span>
+];
+</code></pre></li>
+<li><p>Avoid use of <code>switch</code> statements altogether. They are hard to outdent using the standard whitespace rules above, and are prone to error due to missing <code>break</code> statements. See <a href="http://ericleads.com/2012/12/switch-case-considered-harmful/">this article</a> for more detail.</p></li>
+<li><p>Prefer single quotes around JavaScript strings, rather than double quotes. Having a standard of any sort is preferable to a mix-and-match approach, and single quotes allow for easy embedding of HTML, which prefers double quotes around tag attributes.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-comment">// good:</span>
+<span class="hljs-keyword">var</span> dog = <span class="hljs-string">'dog'</span>;
+<span class="hljs-keyword">var</span> cat = <span class="hljs-string">'cat'</span>;
+
+<span class="hljs-comment">// acceptable:</span>
+<span class="hljs-keyword">var</span> dog = <span class="hljs-string">"dog"</span>;
+<span class="hljs-keyword">var</span> cat = <span class="hljs-string">"cat"</span>;
+
+<span class="hljs-comment">// bad:</span>
+<span class="hljs-keyword">var</span> dog = <span class="hljs-string">'dog'</span>;
+<span class="hljs-keyword">var</span> cat = <span class="hljs-string">"cat"</span>;
+</code></pre></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="html"></a><a href="#html" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTML</h3>
+<ul>
+<li><p>Do not use ids for html elements. Use a class instead.</p>
+<pre><code class="hljs css languages- html"><span class="hljs-comment">&lt;!-- good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lucy"</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!-- bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"lucy"</span> /&gt;</span>
+</code></pre></li>
+<li><p>Do not include a <code>type=text/javascript&quot;</code> attribute on script tags</p>
+<pre><code class="hljs css languages- html"><span class="hljs-comment">&lt;!-- good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"a.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"a.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/credits.html">← Where we get template data</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/LOGO1.png" alt="GroceriStar documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/gs-shoplist-screens.html">GS Shoplist screens</a><a href="/documentation/docs/tests.html">Tests</a><a href="/documentation/docs/groceristar-website-methods-list/groceristar-website-methods-list.html">Metods list</a><a href="/documentation/docs/shop-list-information/shop-list-information.html">Shop list information</a></div><div></div><div><h5>More</h5><a href="https://medium.com/groceristar">Blog</a><a href="https://github.com/GroceriStar/documentation">GitHub</a><a class="github-button" href="https://github.com/GroceriStar" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 GroceriStar company</section></footer></div></body></html>
