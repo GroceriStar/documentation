@@ -1,3 +1,12 @@
+
+---
+id: information
+title: information
+sidebar_label: information
+---
+
+
+
 // add favorites, meal done like array of recipe ids.
 
 //favorite/list

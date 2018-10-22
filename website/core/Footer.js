@@ -52,9 +52,18 @@ class Footer extends React.Component {
 
           </div>
           <div>
-            <h5>More</h5>
-            <a href="https://medium.com/groceristar">Blog</a>
-            <a href="https://github.com/GroceriStar/documentation">GitHub</a>
+            <h5>
+              More
+            </h5>
+            <a href="/documentation/docs/about-groceristar.html">
+              About Groceristar company
+            </a>
+            <a href="https://medium.com/groceristar">
+              Blog
+            </a>
+            <a href="https://github.com/GroceriStar/documentation">
+              GitHub
+            </a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -68,7 +77,9 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">
+          {this.props.config.copyright}
+        </section>
       </footer>
     );
   }
