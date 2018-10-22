@@ -3,7 +3,6 @@ id: about-groceristar
 title: About Groceristar company
 sidebar_label: About Groceristar company
 ---
-https://trello.com/c/x9AHXn06/40-add-about-us-content-to-docusaurusgroceristar-and-to-our-homepage
 
 
 ## Company Introduction
