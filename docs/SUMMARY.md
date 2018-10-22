@@ -53,3 +53,4 @@ sidebar_label: Table of Contents
     * [Method that get list of ingredients from department](groceristar-website-methods-list/ingredients-router/7.md)
 * [GS sitemap](gs-sitemap.md)
 * [GS Shoplist screens](gs-shoplist-screens.md)
+* [About GroceriStar](about-groceristar.md)

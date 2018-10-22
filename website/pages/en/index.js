@@ -193,6 +193,7 @@ const FeatureCallout = props => (
   </ul></li>
   <li><a href="/documentation/docs/gs-sitemap.html">GS sitemap</a></li>
   <li><a href="/documentation/docs/gs-shoplist-screens.html">GS Shoplist screens</a></li>
+  <li><a href="/documentation/docs/about-groceristar.html">About GroceriStar</a></li>
   </ul>
 
       </div>
