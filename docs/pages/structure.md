@@ -1,3 +1,7 @@
+---
+id: structure
+title: structure
+---
 ```Views
   forms
      clear-purchased

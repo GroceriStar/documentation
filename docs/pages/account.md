@@ -1,1 +1,4 @@
-#### Account page
+---
+id: account
+title: Account page
+---
