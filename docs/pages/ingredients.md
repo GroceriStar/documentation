@@ -1,1 +1,4 @@
-#### Ingredient page
+---
+id: ingredients
+title: Ingredient page
+---

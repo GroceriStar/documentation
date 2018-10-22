@@ -1,1 +1,4 @@
-#### Grocery list
+---
+id: grocery-list
+title: Grocery list
+---

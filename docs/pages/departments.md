@@ -1,1 +1,4 @@
-#### Departments
+---
+id: departments
+title: Departments
+---
