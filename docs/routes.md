@@ -6,7 +6,7 @@ sidebar_label: Routes
 
 
 ## Routes(not formatted)
-#### Routes
+#### Department
 **/department/:id/:groceryId** ensureLoggedIn('/auth/account'), departmentController.getDepartment);
 
 **/departments/show/:groceryId** 		ensureLoggedIn('/auth/account'),	 departmentController.departmentsList);
@@ -23,7 +23,7 @@ sidebar_label: Routes
 **/remove/department/:id/:groceryId** departmentController.deleteDepartment);
 
 ----
-
+#### favorites
 router.get('**/favorites**', ensureLoggedIn('/auth/account')
 
 
@@ -38,7 +38,7 @@ router.get('**/favorites**', ensureLoggedIn('/auth/account')
   router.get('**/add/fav2/clear**',  ensureLoggedIn('/auth/account')
 
 ---
-
+#### grocery
   **/view/grocery/:groceryId**     
     ensureLoggedIn('/auth/account'),
     groceryController.viewGrocery);
@@ -115,7 +115,7 @@ router.get('**/favorites**', ensureLoggedIn('/auth/account')
   router.get('**/clone-grocery/:groceryId**', groceryController.getCloneForm);
 
 
-
+#### Dashboard
 // :todo finish
  router.get('**create-new-grocery**',
   ensureLoggedIn('/auth/account'),
@@ -135,7 +135,7 @@ router.get('**/favorites**', ensureLoggedIn('/auth/account')
   router.post('**/update/name**',
     groceryController.postUpdateName);
 
-
+#### Shopping
   // Shopping part, i.e. TODO list
   router.get('**/shopping/:groceryId/:departmentId**',
     groceryController.shopping);
